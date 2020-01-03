@@ -2,7 +2,7 @@
 	"client": {
 		"name": "Achme Broker Ltd",
 		"policies": [{
-				"id": 1,
+				"id": 0,
 				"customer_name": "ABC Joinery",
 				"customer_address": "12 Ascott Street, Dundee",
 				"premium": 123.87,
@@ -10,7 +10,7 @@
 				"insurer_name": "Aviva"
 			},
 			{
-				"id": 2,
+				"id": 1,
 				"customer_name": "XYZ Plumbing",
 				"customer_address": "24 Fleet Street, Glasgow",
 				"premium": 2321.45,
@@ -18,7 +18,7 @@
 				"insurer_name": "Allianz"
 			},
 			{
-				"id": 3,
+				"id": 2,
 				"customer_name": "Fast Taxis",
 				"customer_address": "324b Bank Street, Aberdeen",
 				"premium": 59897.00,
@@ -26,7 +26,7 @@
 				"insurer_name": "Aviva"
 			},
 			{
-				"id": 4,
+				"id": 3,
 				"customer_name": "Fast Taxis",
 			 	"customer_address": "324b Bank Street, Aberdeen",
 				"policy_type": "Public Liability",
