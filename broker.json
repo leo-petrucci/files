@@ -29,8 +29,8 @@
 				"id": 3,
 				"customer_name": "Fast Taxis",
 			 	"customer_address": "324b Bank Street, Aberdeen",
-				"policy_type": "Public Liability",
 			    	"premium": 6845.00,
+				"policy_type": "Public Liability",
 				"insurer_name": "QBE"
 			}
 		]
