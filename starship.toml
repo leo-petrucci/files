@@ -1,97 +1,39 @@
-[aws]
-symbol = " "
-
 [battery]
-full_symbol = " "
-charging_symbol = " "
-discharging_symbol = " "
-
-[time]
-disabled = true
-format = '🕙  [\[ $time \]]($style) '
-time_format = "%T"
-utc_time_offset = "-5"
-time_range = "10:00:00-14:00:00"
-
-#[battery]
-#full_symbol = "🔋  "
-#charging_symbol = "⚡️ "
-#discharging_symbol = "💀  "
-
-[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
-threshold = 10
-style = "bold red"
-
-[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
-threshold = 30
-style = "bold yellow"
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"       
 
 [[battery.display]]
-threshold = 100
-style = "bold green"
+threshold = 30
+style = "bold red"
 
-[conda]
-symbol = " "
+[character]
+error_symbol = "[✖](bold red) "
 
-[dart]
-symbol = " "
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
 
-[docker]
-symbol = " "
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
 
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
-[golang]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
 
 [memory_usage]
-symbol = " "
+format = " $symbol [${ram}( | ${swap})]($style) "
+threshold = -1
+style = "bold dimmed white"
+disabled = false
 
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
+[username]
+style_user = "bold dimmed blue"
+show_always = false
 
 [nodejs]
-symbol = " "
-
-[package]
-symbol = "📦  "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[swift]
-symbol = "ﯣ "
+format = "via [ $version](bold green)"
